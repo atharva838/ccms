@@ -47,3 +47,11 @@ tbody {
     height: 6vmax;
     font-size: 2vmax;
 }
+@media (max-width:600px) {
+    thead{
+        font-size: 1.3vmax;
+    }
+    tbody{
+        font-size: 1.5vmax;
+    }
+}
