@@ -5,7 +5,7 @@ if (localStorage.getItem("islogedin") !== "true") {
 }
 function logout() {
   localStorage.removeItem("islogedin");
-  window.location.href = "../STRUCTURE/login.html";
+  window.location.href = "login.html";
 }
 let complaint = JSON.parse(localStorage.getItem("complaint")) || [];
 let admintable = document.getElementById("admincomplaintlist");
@@ -55,3 +55,4 @@ function deletecomplaint(index) {
     rendercomplaint();
   }
 }
+
