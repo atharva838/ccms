@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complaint Page - CCMS</title>
+    <link rel="stylesheet" href="complaint.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Just Write A Complaint</h1>
+      <section class="btns">
+        <button onclick="location.href='index.html'" class="btn">
+          Home
+        </button>
+        <button onclick="location.href='complaint.html'" class="btn">
+          Complaints
+        </button>
+        <button onclick="location.href='status.html'" class="btn">
+          Status
+        </button>
+        <button onclick="location.href='login.html'" class="btn">
+          Login For Admin
+        </button>
+      </section>
+    </header>
+    <main>
+      <h2>
+        Please Provide a Accurate Information So The Municipal Authority Can
+        Take Actions
+      </h2>
+      <form onsubmit="SubmitForm(event)" id="complaintform">
+        <section class="form-section">
+          <h3>Citizen Details</h3>
+          <input
+            type="text"
+            name="name"
+            id="username"
+            placeholder="Enter A FullName"
+            required
+          />
+          <input
+            type="tel"
+            name="mobile"
+            id="mobile"
+            required
+            pattern="[0-9]{10}"
+            placeholder="Enter A Mobile No"
+          />
+        </section>
+        <section class="form-section">
+          <h3>Complaint Information</h3>
+          <input id="complaintimg" type="file" accept="image/" placeholder="Upload Image">
+          <input
+            type="text"
+            name="complainttype"
+            id="complainttype"
+            placeholder="Enter A Complaint Category"
+            required
+          />
+          <textarea
+            name="description"
+            id="description"
+            rows="4"
+            placeholder="enter a detailed complaint description"
+          ></textarea>
+        </section>
+        <section class="form-section">
+          <h3>Location Details</h3>
+
+          <input
+            type="text"
+            name="area"
+            id="area"
+            placeholder="enter area"
+            required
+          />
+
+          <input type="text" name="landmark" id="landmark" placeholder="enter A landmark" required />
+
+          <input type="number" name="pincode" id="pincode" placeholder="Enter A Pincode " pattern="[0-9]{6}" />
+
+          <button type="submit" >Submit</button>
+        </section>
+      </form>
+    </main>
+    <footer>@CVIC COMPLAINT MANAGEMENT SYSTEM</footer>
+    <script src="complaint.js"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page - For Admin</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <h1>Just Write A Complaint</h1>
+        <section class="btns">
+        <button onclick="location.href='index.html'" class="btn">
+          Home
+        </button>
+        <button onclick="location.href='complaint.html'" class="btn">
+          Complaints
+        </button>
+        <button onclick="location.href='status.html'" class="btn">
+          Status
+        </button>
+        <button onclick="location.href='login.html'" class="btn">
+          Login For Admin
+        </button>
+      </section>
+    </header>
+    <main>
+        <form onsubmit="adminlogin(event)" id="loginform">
+           <input type="text" name="Admin" id="Admin" placeholder="Enter Admin UserName">
+           <input type="password" name="password" id="password" placeholder="Enter password">
+           <button type="submit">Login</button>
+        </form>
+    </main>
+    <footer>
+        @CVIC COMPLAINT MANAGEMENT SYSTEM
+    </footer>
+    <script src="login.js"></script>
+</body>
+</html> 

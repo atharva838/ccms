@@ -1,0 +1,49 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html , body { 
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(138, 134, 134);
+    color: black;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2%;
+}
+#logout {
+    font-size: 3vmax;
+    padding: 2% 3%;
+    border-radius: 10%;
+}
+header h2{
+    font-size: 2.3vmax;
+    text-transform: uppercase;
+    font-family: cursive;
+}
+main{ 
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5% 0% ;
+}
+table {
+    width: 80%;
+    text-transform: capitalize;
+    text-align: center;
+}
+thead {
+    height: 5vmax;
+    font-size: 3vmax;
+}
+tbody {
+    height: 6vmax;
+    font-size: 2vmax;
+}
